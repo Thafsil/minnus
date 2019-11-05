@@ -7,7 +7,11 @@ const apiHelper = new ApiHelper();
 export class UserDataService {
     constructor() { }
     getUserData(){
-        const uri = `localhost:3000/api/post`;
+        const uri = `http://localhost:3000/api/dashboard/get`;
         return apiHelper.get(uri);
+    }
+    registerNewUser(data){
+        const uri = `http://localhost:3000/api/dashboard/post`;
+        return apiHelper.post(uri,data);
     }
 }

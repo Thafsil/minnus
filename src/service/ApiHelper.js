@@ -14,4 +14,11 @@ export class ApiHelper {
         }).then(this.checkResponse)
             .catch(this.handleError)
     }
+    post(uri, data) {
+        return axios.post(uri, data, {
+            // headers: this.getHeaders(),
+            // withCredentials: false
+        }).then(this.checkResponse)
+            .catch(this.handleError)
+    }
 }
