@@ -14,4 +14,8 @@ export class UserDataService {
         const uri = `http://localhost:3000/api/dashboard/post`;
         return apiHelper.post(uri,data);
     }
+    login(data){
+        const uri = `http://localhost:3000/api/dashboard/login/post`;
+        return apiHelper.post(uri,data);
+    }
 }
