@@ -33,8 +33,8 @@
       class="mb-2"
     >
       <b-input placeholder="Name" v-on:change="name($event)" />
-      <b-input placeholder="password" class="mt-4" v-on:change="password($event)" />
-      <b-input placeholder="confirm password" class="mt-4" v-on:change="confirmPassword($event)" />
+      <b-input placeholder="password" type="password" class="mt-4" v-on:change="password($event)" />
+      <b-input placeholder="confirm password" type="password" class="mt-4" v-on:change="confirmPassword($event)" />
       <div class="m-auto text-center">
         <b-button class="mt-4 w-100" @click="SignUpUser()">SignUp</b-button>
       </div>
